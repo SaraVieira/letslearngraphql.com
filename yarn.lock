@@ -92,6 +92,13 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@u-wave/react-youtube@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@u-wave/react-youtube/-/react-youtube-0.6.0.tgz#6de3c8b7268a4873cd28f25c3998e602a5b1129e"
+  dependencies:
+    load-script2 "^1.0.1"
+    prop-types "^15.6.1"
+
 "@webassemblyjs/ast@1.5.13":
   version "1.5.13"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.5.13.tgz#81155a570bd5803a30ec31436bc2c9c0ede38f25"
@@ -4427,6 +4434,10 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
+load-script2@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/load-script2/-/load-script2-1.0.1.tgz#fd7d75987d0a7dbeab5b11f93581b9154a04eac1"
+
 loader-fs-cache@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/loader-fs-cache/-/loader-fs-cache-1.0.1.tgz#56e0bf08bd9708b26a765b68509840c8dec9fdbc"
@@ -6961,6 +6972,10 @@ styled-flex-component@^2.2.2:
 styled-is@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/styled-is/-/styled-is-1.1.2.tgz#f23a43249ba52ac9136c166aac1da30a5711593e"
+
+styled-is@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/styled-is/-/styled-is-1.1.5.tgz#acd8ad180217abea036e4f2cc58593899871f02a"
 
 stylis-rule-sheet@^0.0.10:
   version "0.0.10"
