@@ -4,9 +4,9 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 
 hydrate(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
