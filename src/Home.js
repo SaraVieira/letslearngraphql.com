@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 const HomeMain = styled.main`
   background-color: #1b161e;
@@ -16,7 +16,7 @@ const HomeMain = styled.main`
 `
 
 const H1 = styled.h1`
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-size: 9vw;
   line-height: 1;
   color: #37ff00;
@@ -24,7 +24,7 @@ const H1 = styled.h1`
   display: flex;
   justify-content: center;
   margin: 5px 0;
-  border-bottom: 1px solid #463C4D;
+  border-bottom: 1px solid #463c4d;
   font-weight: normal;
 
   span {
@@ -34,11 +34,11 @@ const H1 = styled.h1`
 `
 
 const Main = styled.section`
-    max-width: 100%;
-    width: 968px;
-    margin: 0 auto;
-    margin-top: 60px;
-    font-weight: normal;
+  max-width: 100%;
+  width: 968px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-weight: normal;
 `
 
 const Redirect = styled(Link)`
@@ -59,15 +59,19 @@ const Redirect = styled(Link)`
 `
 
 export default () => (
-    <HomeMain>
-      <H1><span>Let’s</span></H1>
-      <H1><span>Learn</span></H1>
-      <H1><span>GraphQL</span></H1>
-      <Main>
-        5 hours free GraphQL Workshop taught by Sara Vieira.
-        <Redirect to="/workshop">Start learning</Redirect>
-      </Main>
-    </HomeMain>
-);
-  
-
+  <HomeMain>
+    <H1>
+      <span>Let’s</span>
+    </H1>
+    <H1>
+      <span>Learn</span>
+    </H1>
+    <H1>
+      <span>GraphQL</span>
+    </H1>
+    <Main>
+      5 hours free GraphQL Workshop taught by Sara Vieira.
+      <Redirect to="/workshop">Start learning</Redirect>
+    </Main>
+  </HomeMain>
+)

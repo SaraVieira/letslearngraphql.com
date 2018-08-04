@@ -1,10 +1,10 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
-import Redirect from 'react-router-dom/Redirect';
-import Home from './Home';
-import Workshop from './Workshop'
-import { injectGlobal } from 'styled-components'
+import React from "react"
+import Route from "react-router-dom/Route"
+import Switch from "react-router-dom/Switch"
+import Redirect from "react-router-dom/Redirect"
+import Home from "./Home"
+import Workshop from "./Workshop"
+import { injectGlobal } from "styled-components"
 
 injectGlobal`
   body {
@@ -36,19 +36,19 @@ injectGlobal`
 const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-      <Route
+    <Route
       exact
-       path="/workshop"
-        render={props =>
-          <Redirect
-            to={{
-              pathname: "/workshop/1"
-            }}
-          />
-        }
-      />
+      path="/workshop"
+      render={props => (
+        <Redirect
+          to={{
+            pathname: "/workshop/1"
+          }}
+        />
+      )}
+    />
     <Route path="/workshop/:part" component={Workshop} />
   </Switch>
-);
+)
 
-export default App;
+export default App
