@@ -19,7 +19,7 @@ server
   .post("/donate", textParser, async (req, res) => {
     try {
       let { status } = await stripe.charges.create({
-        amount: req.body.amount * 100,
+        amount: req.body.amount * 100, // DON't FREAK! Stripe does amounts in cents
         currency: "eur",
         description: "An example charge",
         source: req.body.id
