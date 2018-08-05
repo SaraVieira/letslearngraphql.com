@@ -1,11 +1,11 @@
 {
-  "name": "my-razzle-app",
-  "version": "2.0.0-alpha.8",
+  "name": "lets-learn-graphql",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
-    "start:prod": "NODE_ENV=production node build/server.js",
+    "now-start": "NODE_ENV=production node build/server.js",
     "format": "prettier --write '**/*.{js,css,md}'"
   },
   "dependencies": {
