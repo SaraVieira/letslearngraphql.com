@@ -16,7 +16,7 @@ server
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .post("/charge", async (req, res) => {
     try {
-      const costumer = await stripe.customers.create({
+      const customer = await stripe.customers.create({
         email: req.body.stripeEmail,
         source: req.body.stripeToken
       })

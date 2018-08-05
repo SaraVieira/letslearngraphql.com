@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="221px" height="23px" viewBox="0 0 221 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Let’s Learn GraphQL</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="NunitoSans-Regular, Nunito Sans" font-size="24" font-weight="normal" line-spacing="48" text-decoration="underline">
-        <g id="part-1" transform="translate(-24.000000, -30.000000)" fill="#1B161E">
-            <text id="Let’s-Learn-GraphQL">
-                <tspan x="24" y="40">Let’s Learn GraphQL</tspan>
-            </text>
-        </g>
-    </g>
-</svg>
+<svg width="221" height="23" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-24 -30)" fill="#1B161E" fill-rule="evenodd" font-family="NunitoSans-Regular, Nunito Sans" font-size="24" text-decoration="underline"><tspan x="24" y="40">Let’s Learn GraphQL</tspan></text></svg>
