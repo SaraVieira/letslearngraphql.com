@@ -41,6 +41,10 @@ const Main = styled.section`
   font-weight: normal;
 `
 
+const Anchor = styled.a`
+  color: white;
+`
+
 const Redirect = styled(Link)`
   height: 60px;
   background-color: #37ff00;
@@ -52,6 +56,7 @@ const Redirect = styled(Link)`
   color: #1b161e;
   width: 200px;
   margin-top: 30px;
+  text-decoration: none;
 
   &:hover {
     background: #5fca41;
@@ -70,8 +75,15 @@ export default () => (
       <span>GraphQL</span>
     </H1>
     <Main>
-      5 hours free GraphQL Workshop taught by Sara Vieira.
-      <Redirect to="/workshop">Start learning</Redirect>
+      5 hours free GraphQL Workshop taught by{" "}
+      <Anchor
+        href="https://twitter.com/NikkitaFTW"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Sara Vieira
+      </Anchor>
+      .<Redirect to="/workshop">Start learning</Redirect>
     </Main>
   </HomeMain>
 )

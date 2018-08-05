@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Nav from "./components/Nav"
 import Video from "./components/Video"
+import Footer from "./components/Footer"
 import Videos from "./data"
 import { Link } from "react-router-dom"
 import is from "styled-is"
@@ -47,6 +48,7 @@ const Tab = styled(Link)`
   line-height: 1.88;
   color: #1b161e;
   padding: 8px 12px;
+  text-decoration: none;
 
   ${is("active")`
     background: #1B161E;
@@ -94,5 +96,6 @@ export default ({ match }) => (
         )
       )}
     </Main>
+    <Footer />
   </HomeMain>
 )

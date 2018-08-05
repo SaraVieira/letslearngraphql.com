@@ -19,6 +19,11 @@ injectGlobal`
         box-sizing: border-box;
       }
 
+      a {
+        text-decoration: underline;
+        color: #484848;
+      }
+
     .video {
       max-width: 100%;
     }
