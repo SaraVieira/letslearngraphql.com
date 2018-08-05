@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import Nav from "./Components/Nav"
-import Video from "./Components/Video"
-import Footer from "./Components/Footer"
-import Videos from "./data"
+import Nav from "../Components/Nav"
+import Video from "../Components/Video"
+import Footer from "../Components/Footer"
+import Videos from "../data"
 import { Link } from "react-router-dom"
 import is from "styled-is"
 

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
-
+import Button from "./Button"
 import logo from "../assets/logo.svg"
 
 const Nav = styled.nav`
@@ -11,21 +11,11 @@ const Nav = styled.nav`
   margin-top: 16px;
 `
 
-const Button = styled.button`
-  width: 133px;
-  height: 49px;
-  background-color: #37ff00;
-  border: none;
-  border-bottom: 3px solid #1b161e;
-  font-size: 24px;
-  color: #1b161e;
-`
-
 export default () => (
   <Nav>
     <Link to="/">
       <img src={logo} height="48px" width="222px" alt="let's learn graphql" />
     </Link>
-    <Button>Donate</Button>
+    <Button to="/donate">Donate</Button>
   </Nav>
 )

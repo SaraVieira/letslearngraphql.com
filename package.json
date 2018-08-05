@@ -10,15 +10,19 @@
   },
   "dependencies": {
     "@u-wave/react-youtube": "^0.6.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "formik": "^1.0.2",
     "razzle": "^2.4.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-dom-confetti": "^0.0.10",
     "react-router-dom": "^4.3.1",
     "react-stripe-elements": "^2.0.1",
     "stripe": "^6.7.0",
     "styled-components": "^3.4.0",
-    "styled-is": "^1.1.5"
+    "styled-is": "^1.1.5",
+    "yup": "^0.26.0"
   },
   "devDependencies": {
     "prettier": "^1.14.0"

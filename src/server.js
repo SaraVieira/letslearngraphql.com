@@ -4,31 +4,31 @@ import { StaticRouter } from "react-router-dom"
 import express from "express"
 import { renderToString } from "react-dom/server"
 import { ServerStyleSheet, ThemeProvider } from "styled-components"
-const keyPublishable = process.env.PUBLISHABLE_KEY
+import bodyParser from "body-parser"
+
 const keySecret = process.env.SECRET_KEY
-const stripe = require("stripe")(keySecret)
+const stripe = require("stripe")("sk_test_3JOX6AdUaP2ch5T9eUvVXQuN")
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
-
 const server = express()
+const textParser = bodyParser.json()
+
 server
   .disable("x-powered-by")
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .post("/charge", async (req, res) => {
+  .post("/donate", textParser, async (req, res) => {
     try {
-      const customer = await stripe.customers.create({
-        email: req.body.stripeEmail,
-        source: req.body.stripeToken
-      })
-      const charge = await stripe.charges.create({
-        amount: req.body.amount,
-        description: "Sample Charge",
+      let { status } = await stripe.charges.create({
+        amount: req.body.amount * 100,
         currency: "eur",
-        customer: customer.id
+        description: "An example charge",
+        source: req.body.id
       })
-      return charge
-    } catch (e) {
-      return e
+
+      res.json({ status })
+    } catch (err) {
+      console.log(err)
+      res.status(500).end()
     }
   })
   .get("/*", (req, res) => {
@@ -59,6 +59,7 @@ server
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
         <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+        <script src="https://js.stripe.com/v3/"></script>
         ${
           assets.client.css
             ? `<link rel="stylesheet" href="${assets.client.css}">`
