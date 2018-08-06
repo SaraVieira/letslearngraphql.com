@@ -21,7 +21,7 @@ server
       let { status } = await stripe.charges.create({
         amount: req.body.amount * 100, // DON't FREAK! Stripe does amounts in cents
         currency: "eur",
-        description: "An example charge",
+        description: "Donation yay!",
         source: req.body.id
       })
 
