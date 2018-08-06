@@ -17,7 +17,7 @@ const HomeMain = styled.main`
 
 const H1 = styled.h1`
   font-family: "Space Mono";
-  font-size: 9vw;
+  font-size: 120px;
   line-height: 1;
   color: #37ff00;
   width: 100%;
@@ -27,14 +27,22 @@ const H1 = styled.h1`
   border-bottom: 1px solid #463c4d;
   font-weight: normal;
 
+  @media (max-width: 550px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 70px;
+  }
+
   span {
-    max-width: 100%;
+    max-width: 90%;
     width: 968px;
   }
 `
 
 const Main = styled.section`
-  max-width: 100%;
+  max-width: 90%;
   width: 968px;
   margin: 0 auto;
   margin-top: 60px;

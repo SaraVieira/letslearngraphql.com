@@ -60,6 +60,7 @@ const Button = styled.button`
   font-size: 24px;
   color: #1b161e;
   margin-top: 40px;
+  margin-bottom: 20px;
 
   &:disabled {
     background: #90988e;

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import styled from "styled-components"
 import Nav from "../Components/Nav"
 import Video from "../Components/Video"
@@ -92,6 +92,25 @@ export default ({ match }) => (
           <div key={i}>
             <Video {...video} />
             <P>{video.desc}</P>
+            {video.links ? (
+              <Fragment>
+                <h3>Links</h3>
+                <ul>
+                  {video.links.map(e => (
+                    <li>
+                      {" "}
+                      <a
+                        href={e.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {e.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </Fragment>
+            ) : null}
           </div>
         )
       )}
