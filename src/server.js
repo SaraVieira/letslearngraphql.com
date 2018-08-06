@@ -53,8 +53,30 @@ server
     <html lang="">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="utf-8" />
+        <!-- COMMON TAGS -->
+        <meta charset="utf-8">
         <title>Let's Learn GraphQL</title>
+        <!-- Search Engine -->
+        <meta name="description" content="Learn GraphQL by Doing. 5 hours free GraphQL Workshop taught by Sara Vieira.">
+        <meta name="image" content="https://i.imgur.com/s3e9jq9.png">
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Let's Learn GraphQL">
+        <meta itemprop="description" content="Learn GraphQL by Doing. 5 hours free GraphQL Workshop taught by Sara Vieira.">
+        <meta itemprop="image" content="https://i.imgur.com/s3e9jq9.png">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Let's Learn GraphQL">
+        <meta name="twitter:description" content="Learn GraphQL by Doing. 5 hours free GraphQL Workshop taught by Sara Vieira.">
+        <meta name="twitter:site" content="@NikkitaFTW">
+        <meta name="twitter:creator" content="@NikkitaFTW">
+        <meta name="twitter:image:src" content="https://i.imgur.com/s3e9jq9.png">
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="Let's Learn GraphQL">
+        <meta name="og:description" content="Learn GraphQL by Doing. 5 hours free GraphQL Workshop taught by Sara Vieira.">
+        <meta name="og:image" content="https://i.imgur.com/s3e9jq9.png">
+        <meta name="og:url" content="https://letslearngraphql.com/">
+        <meta name="og:site_name" content="Let's Learn GraphQL">
+        <meta name="og:type" content="website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
