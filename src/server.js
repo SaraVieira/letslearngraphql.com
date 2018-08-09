@@ -97,6 +97,14 @@ server
     <body>
         <div id="root">${markup}</div>
     </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123681166-1%22%3E</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123681166-1');
+</script>
 </html>`
       )
     }

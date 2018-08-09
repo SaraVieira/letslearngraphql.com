@@ -117,7 +117,9 @@ class FormInner extends Component {
 
   submit = async ev => {
     this.setState({ error: false, donated: false, loading: true })
-    let { token } = await this.props.stripe.createToken({ name: "letslearngraphql" })
+    let { token } = await this.props.stripe.createToken({
+      name: "letslearngraphql"
+    })
     try {
       let response = await fetch("/donate", {
         method: "POST",
