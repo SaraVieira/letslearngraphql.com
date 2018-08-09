@@ -117,9 +117,11 @@ export default class extends Component {
   state = { done: false }
 
   submit = () => {
-    this.setState({
-      done: true
-    })
+    window.setTimeout(() => {
+      this.setState({
+        done: true
+      })
+    }, 100);
   }
 
   render = () => {
@@ -131,10 +133,7 @@ export default class extends Component {
         <Nav />
         <Main>
           <H2>Subscribe</H2>
-          <H3>
-            Please Input your email below if you wish to get awesome stuff me
-            and YLD do in your email
-          </H3>
+            <H3>Please fill the form below if you wish to get awesome stuff me and YLD do in your email</H3>
           <form
             action="https://yld.us16.list-manage.com/subscribe/post?u=d159c019fc10dc08b3914ac05&amp;id=506e3fae8e"
             method="post"

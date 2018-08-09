@@ -7,7 +7,7 @@ import { ServerStyleSheet, ThemeProvider } from "styled-components"
 import bodyParser from "body-parser"
 
 const keySecret = process.env.SECRET_KEY
-const stripe = require("stripe")("sk_live_Bn3qJEhVFMXjf3qXoiUXxUBW")
+const stripe = require("stripe")("xxx")
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 const server = express()
