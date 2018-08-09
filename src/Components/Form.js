@@ -203,7 +203,7 @@ class FormInner extends Component {
         </Button>
         <div>
           {donated
-            ? "Thank you so much! You are an awesome human and because of you me an React Kyiv can keep making awesome things 🎉"
+            ? "Thank you so much! You are an awesome human and because of you, me and React Kyiv can keep making awesome things 🎉"
             : null}
           {error ? "Oh no, there was an error" : null}
         </div>
