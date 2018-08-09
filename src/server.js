@@ -7,7 +7,7 @@ import { ServerStyleSheet, ThemeProvider } from "styled-components"
 import bodyParser from "body-parser"
 
 const keySecret = process.env.SECRET_KEY
-const stripe = require("stripe")("sk_test_3JOX6AdUaP2ch5T9eUvVXQuN")
+const stripe = require("stripe")("sk_live_Bn3qJEhVFMXjf3qXoiUXxUBW")
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 const server = express()
@@ -82,6 +82,7 @@ server
         <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet">
         <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
         <script src="https://js.stripe.com/v3/"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123681166-1"></script>
         ${
           assets.client.css
             ? `<link rel="stylesheet" href="${assets.client.css}">`
@@ -96,15 +97,14 @@ server
     </head>
     <body>
         <div id="root">${markup}</div>
-    </body>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123681166-1%22%3E</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-123681166-1');
-</script>
+      gtag('config', 'UA-123681166-1');
+    </script>
+    </body>
 </html>`
       )
     }

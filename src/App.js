@@ -52,7 +52,7 @@ class App extends React.Component {
   state = { stripe: null, complete: false }
 
   componentDidMount() {
-    this.setState({ stripe: window.Stripe("pk_test_N19oB0gjEzqvFZm4MWZlIoBT") })
+    this.setState({ stripe: window.Stripe("pk_live_sRc69MIb7dh1E1D0ZdJWYmve") })
   }
 
   render() {
