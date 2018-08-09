@@ -7,6 +7,7 @@ import { StripeProvider } from "react-stripe-elements"
 import Home from "./Pages/Home"
 import Workshop from "./Pages/Workshop"
 import Donate from "./Pages/Donate"
+import Subscribe from "./Pages/Subscribe"
 
 injectGlobal`
   body {
@@ -17,12 +18,16 @@ injectGlobal`
       letter-spacing: normal;
       color: #484848;
 
-      input {
-          height: 60px !important;
-  background-color: #ffffff;
-  border: solid 2px #1b161e;
-  width: 196px;
-  padding: 6px 24px;
+      input:not([type="checkbox"]) {
+        height: 60px !important;
+        background-color: #ffffff;
+        border: solid 2px #1b161e;
+        min-width: 196px;
+        padding: 6px 24px;
+      }
+      fieldset {
+        padding: 0;
+        border: none;
       }
 
       & * {
@@ -73,6 +78,7 @@ class App extends React.Component {
           />
           <Route path="/workshop/:part" component={Workshop} />
           <Route exact path="/donate" component={Donate} />
+          <Route exact path="/subscribe" component={Subscribe} />
         </Switch>
       </StripeProvider>
     )

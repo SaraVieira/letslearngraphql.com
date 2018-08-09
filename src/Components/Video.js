@@ -63,6 +63,10 @@ export default class extends Component {
     playing: false
   }
 
+  componentDidMount() {
+    localStorage.setItem("letslearngraphql_hasSubscribed", "true")
+  }
+
   render = () =>
     this.state.playing ? (
       <VideoWrapper>
