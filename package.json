@@ -5,7 +5,8 @@
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
-    "now-start": "NODE_ENV=production node build/server.js",
+    "now-build": "razzle build",
+    "start:prod": "NODE_ENV=production node build/server.js",
     "format": "prettier --write '**/*.{js,css,md}'"
   },
   "dependencies": {
