@@ -71,41 +71,27 @@ const Redirect = styled(Link)`
   }
 `
 
-export default class extends Component {
-  state = {
-    hasSubscribed: true
-  }
-
-  componentDidMount = () =>
-    this.setState({
-      hasSubscribed: !!localStorage.getItem("letslearngraphql_hasSubscribed")
-    })
-
-  render = () => (
-    <HomeMain>
-      <H1>
-        <span>Let’s</span>
-      </H1>
-      <H1>
-        <span>Learn</span>
-      </H1>
-      <H1>
-        <span>GraphQL</span>
-      </H1>
-      <Main>
-        5 hours free GraphQL Workshop taught by{" "}
-        <Anchor
-          href="https://twitter.com/NikkitaFTW"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sara Vieira
-        </Anchor>
-        .
-        <Redirect to={this.state.hasSubscribed ? "/workshop" : "/subscribe"}>
-          Start learning
-        </Redirect>
-      </Main>
-    </HomeMain>
-  )
-}
+export default () => (
+  <HomeMain>
+    <H1>
+      <span>Let’s</span>
+    </H1>
+    <H1>
+      <span>Learn</span>
+    </H1>
+    <H1>
+      <span>GraphQL</span>
+    </H1>
+    <Main>
+      5 hours free GraphQL Workshop taught by{" "}
+      <Anchor
+        href="https://twitter.com/NikkitaFTW"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Sara Vieira
+      </Anchor>
+      .<Redirect to={"/workshop"}>Start learning</Redirect>
+    </Main>
+  </HomeMain>
+)

@@ -7,7 +7,6 @@ import { StripeProvider } from "react-stripe-elements"
 import Home from "./Pages/Home"
 import Workshop from "./Pages/Workshop"
 import Donate from "./Pages/Donate"
-import Subscribe from "./Pages/Subscribe"
 
 injectGlobal`
   body {
@@ -78,7 +77,6 @@ class App extends React.Component {
           />
           <Route path="/workshop/:part" component={Workshop} />
           <Route exact path="/donate" component={Donate} />
-          <Route exact path="/subscribe" component={Subscribe} />
         </Switch>
       </StripeProvider>
     )
